@@ -42,7 +42,7 @@ return function()
 			path = string.format('__%s__/%s', script.mod_name, path)
 		end
 
-		local func = requre(path)
+		local func = require(path)
 
 		if type(func) ~= 'function' then
 			error('Migration script must return a function to be executed (problematic script: ' .. path .. ' for migration version ' .. version .. ')')
