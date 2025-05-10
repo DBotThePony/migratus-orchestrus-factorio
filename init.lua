@@ -106,6 +106,10 @@ return function()
 	end
 
 	function lib.on_configuration_changed()
+		if __setup_globals == nil and lib.is_up_to_date() then
+			return
+		end
+
 		assert(__setup_globals ~= nil, 'on_init/on_load/on_configuration_changed already called')
 		storage[storage_key] = storage[storage_key] or 0
 
