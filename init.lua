@@ -54,9 +54,9 @@ return function()
 	end
 
 	function lib.add_migration_function(version, func)
-		assertArgument(1, 'add_migration_function', name, 'string')
+		assertArgument(1, 'add_migration_function', version, 'number')
 		assertArgument(2, 'add_migration_function', func, 'function')
-		assert(not hasMigration(version), 'duplicate migration name: ' .. name)
+		assert(not hasMigration(version), 'duplicate migration version: ' .. version)
 		assert(math.floor(version) == version, 'version must be whole number')
 		assert(version > 0, 'version must be positive')
 
