@@ -4,7 +4,7 @@
 
 This mod is micro auxilary library with purpose of simplifying *Lua state* migrations (upgrades) between mod versions.
 
-While default Factorio has built-in migration mechanism, it was designed specifically for migrating (adjusting) save state's
+While Factorio has built-in migration mechanism, it was designed specifically for migrating (adjusting) save state's
 to fit mod's changes to content, or mod content changes between its versions. This one is designed **specifically** for migrating
 Lua state.
 

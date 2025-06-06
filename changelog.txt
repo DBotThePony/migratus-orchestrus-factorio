@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.0.3
+Date: 2025-06-06
+  Fixes:
+    - Make changelog be parse-able by in-game changelog parser
+
+---------------------------------------------------------------------------------------------------
 Version: 1.0.2
 Date: 2025-05-11
   Fixes:
@@ -8,4 +14,4 @@ Date: 2025-05-11
 Version: 1.0.0
 Date: 2025-05-10
   Features:
-   - Initial release
+    - Initial release
